@@ -2,8 +2,15 @@ package io.nklkarthi;
 
 public class MyService {
 
-    public void doSomething() {
-        System.out.println("Doing something important");
+    private MyRepository myRepository;
+
+    public MyService(MyRepository myRepository) {
+        this.myRepository = myRepository;
+    }
+
+    public void doBusinessLogic() {
+        System.out.println("Doing some business logic");
+        myRepository.doQuery();
     }
     
 }
