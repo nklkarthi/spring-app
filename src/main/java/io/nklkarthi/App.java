@@ -13,6 +13,8 @@ public class App
     {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         MyService myService = applicationContext.getBean(MyService.class);
+        MyService yourService = applicationContext.getBean(MyService.class);
         myService.doSomething();
+        yourService.doSomething();
     }
 }
