@@ -14,5 +14,8 @@ public class App
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         MyService myService = applicationContext.getBean(MyService.class);
         myService.doBusinessLogic();
+
+        MyRepository myRepository = applicationContext.getBean(MyRepository.class);
+        myRepository.doQuery();
     }
 }
