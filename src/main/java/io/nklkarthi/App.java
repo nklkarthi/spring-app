@@ -3,6 +3,8 @@ package io.nklkarthi;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import io.nklkarthi.business.MyService;
+
 /**
  * Hello world!
  *
