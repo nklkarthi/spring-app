@@ -8,7 +8,6 @@ public class AnotherServiceImpl implements MyService {
     @Override
     public void doBusinessLogic() {
         System.out.println("Doing some other business logic slightly different");
-
     }
 
 }
