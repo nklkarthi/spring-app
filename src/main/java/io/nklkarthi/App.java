@@ -11,7 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext("io.nklkarthi");
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
         MyService myService = applicationContext.getBean(MyService.class);
         myService.doBusinessLogic();
